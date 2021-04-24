@@ -11,6 +11,11 @@ declare variable COMPARAMES integer;
 declare variable CONTADOR integer;
 declare variable DATAINICIO date;
 begin
+
+/*###############################################################################################################################################*/
+/* Lembre-se, só utilize a função se precisar, para bancos que estão na linguagem nativa da sua região, utilize to_char(current_date, 'TMMonth') */
+/*###############################################################################################################################################*/
+
   DATAINICIO = dateadd(RECUAR month to current_date);
   CONTADOR = 0;
   while (NUMEROMESES > 0) do
