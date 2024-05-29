@@ -5,7 +5,7 @@ AS $FUNCTION$
 DECLARE
     OUTPUT_TEXT TEXT;
 BEGIN
-    OUTPUT_TEXT := REPLACE(INPUT_TEXT, '\', '\\');      -- substitui '\' por '\\'      */
+    OUTPUT_TEXT := REPLACE(INPUT_TEXT, '\', '\\');      -- substitui '\' por '\\'     
     OUTPUT_TEXT := REPLACE(INPUT_TEXT, '"', '\"');      -- substitui '"' por '\"'
     OUTPUT_TEXT := REPLACE(OUTPUT_TEXT, '/', '\/');     -- substitui '/' por '\/'
     OUTPUT_TEXT := REPLACE(OUTPUT_TEXT, CHR(8), '\b');  -- substitui char(8) por \b
